@@ -15,7 +15,7 @@ public class CellShould {
     "false, 1, false",
     "false, 2, false",
   })
-  public void
+  void
   die_with_fewer_than_two_live_neighbors(boolean initialStatus, int noOfNeighbors, boolean expectedStatus) {
     Cell cell = new Cell(initialStatus, noOfNeighbors);
 

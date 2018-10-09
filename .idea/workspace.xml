@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2c802d6-d125-410c-8ad8-91cfc1725b5d" name="Default Changelist" comment="" />
+    <list default="true" id="b2c802d6-d125-410c-8ad8-91cfc1725b5d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/CellGrid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/GridShould.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StringArrayConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Cell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/CellShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/CellShould.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CellShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CellShould.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -27,24 +36,24 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="1" />
-          <entry key="java" value="2" />
+          <entry key="java" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="2" />
+          <entry key="JAVA" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="37" />
-          <entry key="java" value="864" />
+          <entry key="java" value="1932" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="864" />
+          <entry key="JAVA" value="1932" />
           <entry key="PLAIN_TEXT" value="37" />
         </counts>
       </usages-collector>
@@ -68,8 +77,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CellShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="266">
+              <caret line="24" column="3" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="24" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Cell.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+              <folding>
+                <element signature="e#255#256#0" expanded="true" />
+                <element signature="e#276#277#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/GridShould.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,13 +114,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Cell.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CellGrid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="61">
+              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding>
-                <element signature="e#255#256#0" expanded="true" />
-                <element signature="e#276#277#0" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#371#372#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,6 +134,17 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>)+</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>,inoutGrid)+</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -471,7 +518,10 @@
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/CellShould.java" />
+        <option value="$PROJECT_DIR$/src/test/java/StringArrayConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Cell.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GridShould.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CellGrid.java" />
       </list>
     </option>
   </component>
@@ -485,6 +535,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -516,6 +567,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="game_of_life_dan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game_of_life_dan" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -525,7 +583,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539094676721" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539098870939" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -549,7 +607,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.GridShould">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -566,6 +624,15 @@
       <module name="game_of_life_dan_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CellShould" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GridShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="game_of_life_dan_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GridShould" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -594,8 +661,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.CellShould" />
+      <item itemvalue="JUnit.GridShould" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GridShould" />
         <item itemvalue="JUnit.CellShould" />
       </list>
     </recent_temporary>
@@ -610,47 +682,48 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539089331241</updated>
-      <workItem from="1539089339589" duration="4696000" />
+      <workItem from="1539089339589" duration="8901000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CellShould - 2018.10.09 at 14h 45m 21s.xml">
-      <configuration name="CellShould" configurationId="JUnit" />
+    <history-entry file="GridShould - 2018.10.09 at 15h 46m 35s.xml">
+      <configuration name="GridShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CellShould - 2018.10.09 at 14h 46m 28s.xml">
-      <configuration name="CellShould" configurationId="JUnit" />
+    <history-entry file="GridShould - 2018.10.09 at 16h 14m 49s.xml">
+      <configuration name="GridShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CellShould - 2018.10.09 at 14h 46m 43s.xml">
-      <configuration name="CellShould" configurationId="JUnit" />
+    <history-entry file="GridShould - 2018.10.09 at 16h 15m 41s.xml">
+      <configuration name="GridShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CellShould - 2018.10.09 at 14h 48m 09s.xml">
-      <configuration name="CellShould" configurationId="JUnit" />
+    <history-entry file="GridShould - 2018.10.09 at 16h 16m 46s.xml">
+      <configuration name="GridShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CellShould - 2018.10.09 at 14h 49m 20s.xml">
-      <configuration name="CellShould" configurationId="JUnit" />
+    <history-entry file="GridShould - 2018.10.09 at 16h 17m 04s.xml">
+      <configuration name="GridShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CellShould - 2018.10.09 at 14h 52m 43s.xml">
-      <configuration name="CellShould" configurationId="JUnit" />
+    <history-entry file="GridShould - 2018.10.09 at 16h 21m 35s.xml">
+      <configuration name="GridShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CellShould - 2018.10.09 at 14h 53m 53s.xml">
-      <configuration name="CellShould" configurationId="JUnit" />
+    <history-entry file="GridShould - 2018.10.09 at 16h 23m 02s.xml">
+      <configuration name="GridShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CellShould - 2018.10.09 at 14h 55m 23s.xml">
-      <configuration name="CellShould" configurationId="JUnit" />
+    <history-entry file="GridShould - 2018.10.09 at 16h 23m 31s.xml">
+      <configuration name="GridShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CellShould - 2018.10.09 at 14h 55m 54s.xml">
-      <configuration name="CellShould" configurationId="JUnit" />
+    <history-entry file="GridShould - 2018.10.09 at 16h 23m 46s.xml">
+      <configuration name="GridShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CellShould - 2018.10.09 at 14h 56m 34s.xml">
-      <configuration name="CellShould" configurationId="JUnit" />
+    <history-entry file="GridShould - 2018.10.09 at 16h 27m 11s.xml">
+      <configuration name="GridShould" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4696000" />
+    <option name="totallyTimeSpent" value="8901000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1225" height="735" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -668,7 +741,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3283582" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39966834" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39966834" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -677,12 +750,12 @@
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="right" id="Gradle" />
       <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Leiningen" />
+      <window_info anchor="right" id="Leiningen" weight="0.32961375" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="REPL" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info active="true" anchor="right" id="Ant Build" order="1" visible="true" weight="0.24978541" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24978541" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
@@ -691,6 +764,57 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/CellGrid.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/CellGrid.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>stateInArray(0,0, new int[]{0, 1, 0, 0})</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stateInArray(1,0, new int[]{0, 1, 0, 0})</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stateInArray(0,1, new int[]{0, 1, 0, 0})</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stateInArray(2,2, new int[]{0, 1, 0, 0})</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>row*width</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -702,21 +826,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CellShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="266">
+          <caret line="24" column="3" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="24" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StringArrayConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="228">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding>
             <element signature="e#255#256#0" expanded="true" />
             <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GridShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CellGrid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding>
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
           </folding>
         </state>
       </provider>
