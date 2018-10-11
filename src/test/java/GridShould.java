@@ -14,24 +14,51 @@ https://www.codewars.com/kata/conways-game-of-life
 public class GridShould {
   @ParameterizedTest
   @CsvSource({
-    "2,2,"+
-      "0;1;" +
-      "0;0",
     "4,4,"+
+    //Input seed matrix
       "0;1;0;0;" +
       "0;0;0;0;" +
       "0;0;0;0;" +
-      "0;0;0;0"
+      "0;0;0;0,"+
+    //Expected neighbors matrix
+    "1;0;1;0;" +
+    "1;1;1;0;" +
+    "0;0;0;0;" +
+    "0;0;0;0",
+    "4,4,"+
+    //Input seed matrix
+      "0;1;0;0;" +
+      "0;1;0;0;" +
+      "0;0;1;0;" +
+      "0;0;0;0,"+
+    //Expected neighbors matrix
+    "2;1;2;0;" +
+    "2;2;3;1;" +
+    "1;2;1;1;" +
+    "0;1;1;1"
   })
   public void
-  give_correct_number_of_neighbors(int width, int height, @ConvertWith(StringArrayConverter.class) String[] initial) {
-    int[] seedStatesArray = intArrayFrom(initial);
+  give_correct_number_of_neighbors(
+    int width, int height,
+    @ConvertWith(StringArrayConverter.class) String[] seed,
+    @ConvertWith(StringArrayConverter.class) String[] expectedNeighbors) {
 
+    int[] seedStatesArray = intArrayFrom(seed);
+    int[] expectedNeighborsArray = intArrayFrom(expectedNeighbors);
     CellGrid grid = new CellGrid(width, height, seedStatesArray);
-    assertThat(grid.cellAt(1,0).numberOfNeighbors(), is(0));
-    assertThat(grid.cellAt(0,0).numberOfNeighbors(), is(1));
+
+    for (int x = 0; x < height; x++){
+      for (int y = 0; y < width; y++){
+        assertThat(grid.cellAt(x, y).numberOfNeighbors(), is(expectedNeighborsArray[matrixPositionInArray(width, x, y)]));
+      }
+    }
   }
-@ParameterizedTest
+
+  private int matrixPositionInArray(int width, int x, int y) {
+    return y*width+x;
+  }
+
+  @ParameterizedTest
   @CsvSource({
     "2,2,"+
       "0;1;" +
