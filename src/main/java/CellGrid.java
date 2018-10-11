@@ -23,22 +23,21 @@ public class CellGrid {
     return cellsMatrix[row][column];
   }
 
-  private int stateInArray(int row, int column, int[] inoutGrid){
-    if(row<0 || row>=height) return 0;
-    if(column<0 || column>=width) return 0;
+  private int stateFromArrayAt(int row, int column, int[] inoutGrid) {
+    if (row < 0 || row >= height){ return 0; }
+    if(column < 0 || column >= width) { return 0; }
     return inoutGrid[row*width+column];
   }
 
   private int calculateNeighbours(int row, int column, int[] inoutGrid){
     return
-      stateInArray(row-1, column-1,inoutGrid)+
-      stateInArray(row-1, column,inoutGrid)+
-      stateInArray(row-1, column+1,inoutGrid)+
-      stateInArray(row, column-1,inoutGrid)+
-      stateInArray(row, column+1,inoutGrid)+
-      stateInArray(row+1, column-1,inoutGrid)+
-      stateInArray(row+1, column,inoutGrid)+
-      stateInArray(row+1, column+1,inoutGrid);
-
+      stateFromArrayAt(row-1, column-1,inoutGrid)+
+      stateFromArrayAt(row-1, column,inoutGrid)+
+      stateFromArrayAt(row-1, column+1,inoutGrid)+
+      stateFromArrayAt(row, column-1,inoutGrid)+
+      stateFromArrayAt(row, column+1,inoutGrid)+
+      stateFromArrayAt(row+1, column-1,inoutGrid)+
+      stateFromArrayAt(row+1, column,inoutGrid)+
+      stateFromArrayAt(row+1, column+1,inoutGrid);
   }
 }
