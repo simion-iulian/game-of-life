@@ -14,24 +14,25 @@ https://www.codewars.com/kata/conways-game-of-life
 public class GridShould {
   @ParameterizedTest
   @CsvSource({
+    //Input seed matrix 1
     "4,4,"+
-    //Input seed matrix
       "0;1;0;0;" +
       "0;0;0;0;" +
       "0;0;0;0;" +
       "0;0;0;0,"+
-    //Expected neighbors matrix
+    //Expected neighbors matrix 1
     "1;0;1;0;" +
     "1;1;1;0;" +
     "0;0;0;0;" +
     "0;0;0;0",
+
+    //Input seed matrix 2
     "4,4,"+
-    //Input seed matrix
       "0;1;0;0;" +
       "0;1;0;0;" +
       "0;0;1;0;" +
       "0;0;0;0,"+
-    //Expected neighbors matrix
+    //Expected neighbors matrix 2
     "2;1;2;0;" +
     "2;2;3;1;" +
     "1;2;1;1;" +
@@ -41,21 +42,49 @@ public class GridShould {
   give_correct_number_of_neighbors(
     int width, int height,
     @ConvertWith(StringArrayConverter.class) String[] seed,
-    @ConvertWith(StringArrayConverter.class) String[] expectedNeighbors) {
+    @ConvertWith(StringArrayConverter.class) String[] expectedNeighborsStrings) {
 
     int[] seedStatesArray = intArrayFrom(seed);
-    int[] expectedNeighborsArray = intArrayFrom(expectedNeighbors);
+    int[] expectedNeighbors = intArrayFrom(expectedNeighborsStrings);
     CellGrid grid = new CellGrid(width, height, seedStatesArray);
 
     for (int x = 0; x < height; x++){
       for (int y = 0; y < width; y++){
-        assertThat(grid.cellAt(x, y).numberOfNeighbors(), is(expectedNeighborsArray[matrixPositionInArray(width, x, y)]));
+        assertThat(grid.cellAt(x, y).numberOfNeighbors(), is(expectedNeighbors[matrixPositionInArray(width, x, y)]));
       }
     }
-  }
+  } @ParameterizedTest
+  @CsvSource({
+    //Input seed matrix
+    "4,4,"+
+      "0;1;0;0;" +
+      "0;1;0;0;" +
+      "0;0;1;0;" +
+      "0;0;0;0,"+
+    //Expected generation matrix
+    "0;0;0;0;" +
+    "0;1;1;0;" +
+    "0;0;0;0;" +
+    "0;0;0;0"
+  })
+  public void
+  check_for_next_generation(
+    int width, int height,
+    @ConvertWith(StringArrayConverter.class) String[] seed,
+    @ConvertWith(StringArrayConverter.class) String[] expectedNeighborsStrings) {
 
-  private int matrixPositionInArray(int width, int x, int y) {
-    return y*width+x;
+    int[] seedStatesArray = intArrayFrom(seed);
+    int[] expectedGeneration = intArrayFrom(expectedNeighborsStrings);
+    CellGrid seedGrid = new CellGrid(width, height, seedStatesArray);
+
+    CellGrid nextGrid = seedGrid.nextGeneration();
+
+    for (int x = 0; x < height; x++){
+      for (int y = 0; y < width; y++){
+        boolean expectedCellStatus = expectedGeneration[matrixPositionInArray(width, x, y)] == 1;
+        assertThat(nextGrid.cellAt(x, y).isAlive(), is(expectedCellStatus) );
+      }
+    }
   }
 
   @ParameterizedTest
@@ -77,5 +106,9 @@ public class GridShould {
 
   private int[] intArrayFrom(String[] array) {
     return Arrays.stream(array).mapToInt(Integer::parseInt).toArray();
+  }
+
+  private int matrixPositionInArray(int width, int x, int y) {
+    return y*width+x;
   }
 }

@@ -1,4 +1,4 @@
-public class CellGrid {
+class CellGrid {
   private final int width;
   private final int height;
   private Cell[][] cellsMatrix;
@@ -17,6 +17,12 @@ public class CellGrid {
             noOfNeighbors);
       }
     }
+  }
+
+  private CellGrid(int width, int height, Cell[][] newMatrix) {
+    this.width = width;
+    this.height = height;
+    cellsMatrix = newMatrix;
   }
 
   Cell cellAt(int row, int column) {
@@ -39,5 +45,15 @@ public class CellGrid {
       stateFromArrayAt(row+1, column-1,inoutGrid)+
       stateFromArrayAt(row+1, column,inoutGrid)+
       stateFromArrayAt(row+1, column+1,inoutGrid);
+  }
+
+  CellGrid nextGeneration() {
+    Cell[][] newGrid = new Cell[width][height];
+    for (int row = 0; row < height; row++) {
+      for (int column = 0; column < width; column++) {
+        newGrid[column][row] = cellsMatrix[column][row].nextGeneration();
+      }
+    }
+    return new CellGrid(width, height, newGrid);
   }
 }
